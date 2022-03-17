@@ -9,16 +9,18 @@ import MainWizard from "./pages/MainWizard";
 import theme from "./theme";
 import { Network } from './types';
 import SystemOverview from "./pages/SystemOverview";
+import { Background } from "./colors";
 
 const Container = styled.main`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: ${Background}
 `;
 
 /**
  * The React app top level including theme and routing.
- * 
+ *
  * @returns the react element containing the app
  */
 const App: FC = (): ReactElement => {

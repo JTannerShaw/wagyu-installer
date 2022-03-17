@@ -29,7 +29,7 @@ const SystemCheck: FC<SystemCheckProps> = (props): ReactElement => {
           System Check
         </Typography>
       </Grid>
-      <ContentGrid container spacing={4} style={{backgroundColor: 'red'}}>
+      <ContentGrid container spacing={4}>
         <SystemChecker />
         <SoftwareChecker />
       </ContentGrid>
