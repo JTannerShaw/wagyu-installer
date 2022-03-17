@@ -15,9 +15,9 @@ const SoftwareChecker: FC<SoftWareCheckerProps> = (props): ReactElement => {
         Installed Software
       </Typography>
       <Grid container item direction='column'>
-        <GridKeyValue keyName='CURL' value={props.CURL}/>
-        <GridKeyValue keyName='RocketPool' value={props.Rocketpool} />
-        <GridKeyValue keyName='Docker' value={props.Docker} />
+        <GridKeyValue keyName='CURL' value={props.CURL === true ? 'YES' : 'NO'} pass={props.CURL}/>
+        <GridKeyValue keyName='RocketPool' value={props.Rocketpool === true ? 'YES' : 'NO'} pass={props.Rocketpool} />
+        <GridKeyValue keyName='Docker' value={props.Docker === true ? 'YES' : 'NO'} pass={props.Docker} />
       </Grid>
     </Grid>
   )

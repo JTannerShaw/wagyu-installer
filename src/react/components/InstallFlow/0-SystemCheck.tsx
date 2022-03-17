@@ -29,9 +29,9 @@ const SystemCheck: FC<SystemCheckProps> = (props): ReactElement => {
           System Check
         </Typography>
       </Grid>
-      <ContentGrid container spacing={4}>
+      <ContentGrid container spacing={8}>
         <SystemChecker />
-        <SoftwareChecker />
+        <SoftwareChecker CURL={true} Rocketpool={false} Docker={true} />
       </ContentGrid>
       {/* props.children is the stepper */}
       {props.children}

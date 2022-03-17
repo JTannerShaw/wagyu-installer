@@ -11,11 +11,11 @@ const SystemChecker: FC = (): ReactElement => {
         Device
       </Typography>
       <Grid container item direction='column'>
-        <GridKeyValue keyName='OS' value={ osName } />
-        <GridKeyValue keyName='CPU' value='I7' />
-        <GridKeyValue keyName='GPU' value='AMD R9' />
-        <GridKeyValue keyName='RAM' value='16 GB' />
-        <GridKeyValue keyName='Storage' value='1000 GB' />
+        <GridKeyValue keyName='OS' value={ osName } pass={true} />
+        <GridKeyValue keyName='CPU' value='I7' pass={false} />
+        <GridKeyValue keyName='GPU' value='AMD R9' pass={true} />
+        <GridKeyValue keyName='RAM' value='16 GB' pass={true} />
+        <GridKeyValue keyName='Storage' value='1000 GB' pass={true} />
       </Grid>
     </Grid>
   )
