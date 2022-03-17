@@ -2,7 +2,8 @@ import React, { FC, ReactElement } from 'react';
 import { Grid, Typography } from '@mui/material';
 import StepNavigation from '../StepNavigation';
 import styled from '@emotion/styled';
-
+import SystemChecker from '../SystemChecker';
+import SoftwareChecker from '../SoftwareChecker';
 type SystemCheckProps = {
   onStepBack: () => void,
   onStepForward: () => void,
@@ -15,9 +16,9 @@ const ContentGrid = styled(Grid)`
 
 /**
  * This page is the first step of the install process where system checks are run.
- * 
+ *
  * @param props the data and functions passed in, they are self documenting
- * @returns 
+ * @returns
  */
 const SystemCheck: FC<SystemCheckProps> = (props): ReactElement => {
 
@@ -28,8 +29,9 @@ const SystemCheck: FC<SystemCheckProps> = (props): ReactElement => {
           System Check
         </Typography>
       </Grid>
-      <ContentGrid>
-
+      <ContentGrid container spacing={4} style={{backgroundColor: 'red'}}>
+        <SystemChecker />
+        <SoftwareChecker />
       </ContentGrid>
       {/* props.children is the stepper */}
       {props.children}
