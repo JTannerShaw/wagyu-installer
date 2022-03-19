@@ -1,5 +1,5 @@
 import React, { FC, ReactElement } from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 
 type KeyValueProps = {
   keyName: string,

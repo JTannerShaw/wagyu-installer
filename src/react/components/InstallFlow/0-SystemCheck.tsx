@@ -4,14 +4,17 @@ import StepNavigation from '../StepNavigation';
 import styled from '@emotion/styled';
 import SystemChecker from '../SystemChecker';
 import SoftwareChecker from '../SoftwareChecker';
+
 type SystemCheckProps = {
   onStepBack: () => void,
   onStepForward: () => void,
 }
 
+
 const ContentGrid = styled(Grid)`
   height: 320px;
   margin-top: 16px;
+  justify-content: center;
 `;
 
 /**

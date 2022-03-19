@@ -6,7 +6,7 @@ import { osName } from 'react-device-detect'
 
 const SystemChecker: FC = (): ReactElement => {
   return (
-    <Grid item xs={6}>
+    <Grid item xs={4}>
       <Typography variant='h5' style={{ textDecoration: "underline" }}>
         Device
       </Typography>

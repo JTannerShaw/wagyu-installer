@@ -10,11 +10,11 @@ type SoftWareCheckerProps = {
 
 const SoftwareChecker: FC<SoftWareCheckerProps> = (props): ReactElement => {
   return (
-    <Grid item xs={6}>
+    <Grid item xs={4}>
       <Typography variant='h5' style={{ textDecoration: "underline" }}>
         Installed Software
       </Typography>
-      <Grid container item direction='column'>
+      <Grid container direction='column'>
         <GridKeyValue keyName='CURL' value={props.CURL === true ? 'YES' : 'NO'} pass={props.CURL}/>
         <GridKeyValue keyName='RocketPool' value={props.Rocketpool === true ? 'YES' : 'NO'} pass={props.Rocketpool} />
         <GridKeyValue keyName='Docker' value={props.Docker === true ? 'YES' : 'NO'} pass={props.Docker} />

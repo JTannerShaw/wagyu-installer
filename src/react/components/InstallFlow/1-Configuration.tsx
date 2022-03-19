@@ -2,6 +2,8 @@ import React, { FC, ReactElement } from 'react';
 import { Grid, Typography } from '@mui/material';
 import StepNavigation from '../StepNavigation';
 import styled from '@emotion/styled';
+import ExecutionSelection from '../ExecutionDropDown';
+import ConsensusSelection from '../ConsensusDropDown';
 
 type ConfigurationProps = {
   onStepBack: () => void,
@@ -15,9 +17,9 @@ const ContentGrid = styled(Grid)`
 
 /**
  * This page is the second step of the install process where the user inputs their configuration.
- * 
+ *
  * @param props the data and functions passed in, they are self documenting
- * @returns 
+ * @returns
  */
 const Configuration: FC<ConfigurationProps> = (props): ReactElement => {
 
@@ -28,8 +30,9 @@ const Configuration: FC<ConfigurationProps> = (props): ReactElement => {
           Configuration
         </Typography>
       </Grid>
-      <ContentGrid>
-
+      <ContentGrid item>
+        <ExecutionSelection />
+        <ConsensusSelection />
       </ContentGrid>
       {/* props.children is the stepper */}
       {props.children}
